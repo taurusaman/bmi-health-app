@@ -70,6 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '444748081532',
     projectId: 'bmi-mobile-app-f6ef9',
     storageBucket: 'bmi-mobile-app-f6ef9.appspot.com',
+    androidClientId: '444748081532-vtfh753qug6o4hruiq8d35m0llubkl8o.apps.googleusercontent.com',
     iosClientId: '444748081532-ejh84hkbplprsjbr69i32a51k691j075.apps.googleusercontent.com',
     iosBundleId: 'com.example.bmiCalculator',
   );

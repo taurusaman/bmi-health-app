@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "444748081532-vtfh753qug6o4hruiq8d35m0llubkl8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bmi_calculator",
+            "certificate_hash": "da8794d5359aa2a6a512d90ce0c80e0c62c90d33"
+          }
+        },
+        {
           "client_id": "444748081532-aokjc0v83gdacknnbu2obrfuijdm3pha.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "444748081532-aokjc0v83gdacknnbu2obrfuijdm3pha.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "444748081532-ejh84hkbplprsjbr69i32a51k691j075.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bmiCalculator"
+              }
             }
           ]
         }

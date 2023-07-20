@@ -17,46 +17,46 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Verify OTP'),
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextField(
-              controller: otpController,
-              decoration: InputDecoration(labelText: 'Enter OTP'),
-            ),
-            SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: () async {
-                String smsCode = otpController.text.trim();
-                FirebaseAuth _auth = FirebaseAuth.instance;
-
-                try {
-                  PhoneAuthCredential credential = PhoneAuthProvider.credential(
-                    verificationId: widget.verificationId,
-                    smsCode: smsCode,
-                  );
-                  await _auth.signInWithCredential(credential);
-
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
-                  );
-                  // Handle the signed-in state, e.g., navigate to the home screen.
-                  // For demonstration purposes, let's simply print the user's UID.
-                  print('Successfully signed in: ${_auth.currentUser?.uid}');
-                } catch (e) {
-                  // Handle sign-in exception.
-                  print('Error signing in: $e');
-                }
-              },
-              child: Text('Verify OTP'),
-            ),
-          ],
+      body: Container(
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.pink, Colors.blue])),
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: otpController,
+                decoration: InputDecoration(labelText: 'Enter OTP'),
+              ),
+              SizedBox(height: 16.0),
+              ElevatedButton(
+                onPressed: () async {
+                  String smsCode = otpController.text.trim(); //we have taken the otp from textformfield using controller and then controller se string me store kara liya hai is onpressed local function me ham controller ke help se value ko le ke use kar skate hai
+                  FirebaseAuth _auth = FirebaseAuth.instance;
+      
+                  try {
+                    PhoneAuthCredential credential = PhoneAuthProvider.credential(
+                      verificationId: widget.verificationId,
+                      smsCode: smsCode,
+                    );
+                    await _auth.signInWithCredential(credential);
+      
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                    );
+                    // Handle the signed-in state, e.g., navigate to the home screen.
+                    // For demonstration purposes, let's simply print the user's UID.
+                    print('Successfully signed in: ${_auth.currentUser?.uid}');
+                  } catch (e) {
+                    // Handle sign-in exception.
+                    print('Error signing in: $e');
+                  }
+                },
+                child: Text('Verify OTP'),
+              ),
+            ],
+          ),
         ),
       ),
     );

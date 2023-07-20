@@ -3,11 +3,16 @@ import 'package:bmi_calculator/screens/loginscreen.dart';
 import 'package:bmi_calculator/screens/otpscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+import 'firebase_options.dart';
 
 void main() async {
-  // Initialize Firebase 
+  // Initialize Firebase
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+     options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(BMIApp());
 }
 

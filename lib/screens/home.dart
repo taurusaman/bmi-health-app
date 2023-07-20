@@ -17,12 +17,16 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold)),
       ),
       body: Container(
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.pink,Colors.blue])),
         child: Column(
           children: [
             Text(
                 'Welcome to BMI Mobile App I remember the time when i left this app because i was not too much aware with the tecnology but see now i am doin it now so trust the process and believe the time factor')
           ],
         ),
+      ),
+      drawer: Drawer(
+        
       ),
     );
   }
