@@ -10,6 +10,7 @@ environment:
   sdk: '^3.0.0'
 
 dependencies:
+  carousel_slider: ^4.2.1
   firebase_auth: ^4.7.1
   firebase_core: ^2.15.0
   flutter:       # Required for every Flutter project

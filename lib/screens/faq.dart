@@ -13,14 +13,14 @@ class _FAQState extends State<FAQ> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('FAQs',style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),backgroundColor: Color(0xff35b237),),
+        title: Text('FAQs',style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),backgroundColor: Colors.pink,),
       body: Center(
         child: Container(
           height: double.infinity,
           width: double.infinity,
          child: Card(
           
-          color: Colors.white70,
+          color: Colors.pink.shade200,
           elevation: 50,
           
           child: SingleChildScrollView(
