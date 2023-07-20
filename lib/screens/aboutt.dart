@@ -1,23 +1,22 @@
-
 import 'package:bmi_calculator/screens/faq.dart';
 import 'package:flutter/material.dart';
- 
+
 class Aboutus extends StatefulWidget {
   const Aboutus({super.key});
- 
+
   @override
   State<Aboutus> createState() => _AboutusState();
 }
- 
+
 class _AboutusState extends State<Aboutus> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color(0xff35b237),
+        backgroundColor: Colors.pink,
         title: Text('About Us',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
       ),
       body: ListView(children: [
         Container(
@@ -44,7 +43,7 @@ class _AboutusState extends State<Aboutus> {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30,
-                                color: Color(0xff35b237),
+                                color: Colors.pink,
                               )),
                         ),
                         TextButton(
@@ -57,12 +56,12 @@ class _AboutusState extends State<Aboutus> {
                                 decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30,
-                                color: Color(0xff35b237),
+                                color: Colors.pink,
                               )),
                         )
                       ]),
                   Text(
-                      '\n\n\nOur e-waste management app provides a convenient and reliable solution for individuals, households, and businesses to dispose of their electronic waste in an environmentally friendly manner. The app allows users (normal citizens and electronic shops) to schedule e-waste pickups from their location and send it to a hub where those e-wastes are classified based on several electronic categories. After categorization the waste is disassembled, segregated and sent to the concerned industry. The app accepts a wide range of electronic devices, including large appliances, small appliances, light equipment, IT components, batteries, and medical devices.In addition the app provides real-time updates on the status of the e-waste pickup, including the pickup date and time, pickup location, and destination. The user will get notified at every step of e-waste recycling from getting your rider appointed to reaching the destination industry.'),
+                      '\n\n\n About Us Welcome to our BMI Calculator App!\n\nPurpose \n Our BMI Calculator is a simple tool designed to help you calculate your Body Mass Index (BMI). BMI is a measurement that can give you an idea of whether your weight is appropriate for your height. Its an essential indicator of your overall health and can help you understand if you are underweight, normal weight, overweight, or obese. \n\n Features- Easy-to-use interface for entering your weight and height- Instant calculation of your BMI- BMI classification and interpretation for a better understanding- User-friendly design for a pleasant experience \n\nDisclaimer \nPlease note that our BMI Calculator is not a diagnostic tool and should not replace professional medical advice. The results provided by the calculator are for informational purposes only. If you have any concerns about your health or weight, consult a healthcare professional.\n\n Contact Us\n If you have any questions, feedback, or suggestions for improvement, wed love to hear from you. You can reach us at [email@taurusaman@123.com](mailto:email@amansingh828355@gmail.com.com) or through our social media channels:- [Facebook](https://www.facebook.com/example)- [Twitter](https://twitter.com/example)\n\n The Team\n\nOur BMI Calculator App was created by a dedicated team of developers who are passionate about promoting health and wellness through technology. Meet the team:- [Aditya Raj](https://www.linkedin.com/in/amansingh): Lead Developer- [Aman Singh](https://www.linkedin.com/in/janesmith): UX/UI Designer- [Aastha Seth](https://www.linkedin.com/in/mikejohnson): Data AnalystWe would like to thank you for using our app and hope it helps you on your journey to a healthier lifestyle!'),
                 ]),
               ),
             ),
@@ -83,7 +82,7 @@ class _AboutusState extends State<Aboutus> {
                   ),
                 ),
                 Image(
-                  image: AssetImage('assets/model.png'),
+                  image: AssetImage('assets/images/image1.jpg'),
                 ),
               ],
             ),
