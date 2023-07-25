@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
 
-void main()  {
-  // Initialize Firebase
-  //WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp(
-  //  options: DefaultFirebaseOptions.currentPlatform,
- // );
+void main() async {
+  //Initialize Firebase
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(BMIApp());
 }
 
@@ -22,7 +22,7 @@ class BMIApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/login',
       routes: {
         '/login': (context) => MyLoginscreen(),
         '/home': (context) => HomeScreen(),
